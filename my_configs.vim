@@ -7,3 +7,4 @@ set foldlevelstart=99
 
 " foldmethod by filetype
 au FileType cpp setl foldmethod=syntax
+au FileType python setl foldmethod=indent
