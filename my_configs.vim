@@ -11,3 +11,8 @@ au FileType python setl foldmethod=indent
 "TODO this is only walkaround, so find why shiftwidth set to 4 for python
 au FileType python setl shiftwidth=2
 au FileType cmake setl foldmethod=indent
+
+try
+source ~/.vim_runtime/my_configs_local.vim
+catch
+endtry

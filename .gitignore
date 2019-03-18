@@ -7,3 +7,6 @@ sources_non_forked/ctrlp.vim/doc/tags*
 my_plugins/
 tags
 .DS_Store
+
+# local setting
+my_configs_local.vim
