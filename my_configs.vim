@@ -5,13 +5,19 @@ set t_Co=256
 " No fold view on opening buffer
 set foldlevelstart=99
 
-" foldmethod by filetype
+" cpp
 au FileType cpp setl foldmethod=syntax
+
+" python
 au FileType python setl foldmethod=indent
-"TODO this is only walkaround, so find why shiftwidth set to 4 for python
+" TODO this is only walkaround, so find why shiftwidth set to 4 for python without this line
 au FileType python setl shiftwidth=2
+
+" cmake
 au FileType cmake setl foldmethod=indent
-"TODO apply proper setting for flatbuffers
+
+" flatbuffers
+" TODO apply proper setting for flatbuffers
 au BufRead *.fbs setl syntax=cpp
 au BufRead *.fbs setl foldmethod=syntax
 
