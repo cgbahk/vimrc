@@ -2,6 +2,9 @@ set shiftwidth=2
 let g:gitgutter_enabled=1 " TODO Not sure this is applied
 set t_Co=256
 
+" let ale using compile_commands.json
+let g:ale_c_parse_compile_commands = 1
+
 " No fold view on opening buffer
 set foldlevelstart=99
 
