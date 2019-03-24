@@ -24,6 +24,12 @@ au FileType cmake setl foldmethod=indent
 au BufRead *.fbs setl syntax=cpp
 au BufRead *.fbs setl foldmethod=syntax
 
+" sh
+au FileType sh setl foldmethod=indent
+
+" bazel
+au FileType bzl setl foldmethod=syntax
+
 try
 source ~/.vim_runtime/my_configs_local.vim
 catch
