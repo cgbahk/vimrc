@@ -11,8 +11,6 @@ au FileType cpp setl foldmethod=syntax
 
 " python
 au FileType python setl foldmethod=indent
-" TODO this is only walkaround, so find why shiftwidth set to 4 for python without this line
-au FileType python setl shiftwidth=2
 
 " cmake
 au FileType cmake setl foldmethod=indent
