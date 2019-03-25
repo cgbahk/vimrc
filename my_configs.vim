@@ -1,4 +1,3 @@
-set shiftwidth=2
 set t_Co=256
 
 " let ale using compile_commands.json
