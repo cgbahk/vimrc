@@ -179,9 +179,10 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 2 spaces
+" 1 indent == 2 spaces
 set shiftwidth=2
-set tabstop=2
+" 1 real tab == 4 spaces
+set tabstop=4
 
 " Linebreak on 500 characters
 set lbr
