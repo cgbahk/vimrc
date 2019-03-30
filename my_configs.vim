@@ -6,8 +6,8 @@ let g:ale_c_parse_compile_commands = 1
 " No fold view on opening buffer
 set foldlevelstart=99
 
-" cpp
-au FileType cpp setl foldmethod=syntax
+" set default foldmethod
+set foldmethod=syntax
 
 " python
 au FileType python setl foldmethod=indent
@@ -18,13 +18,9 @@ au FileType cmake setl foldmethod=indent
 " flatbuffers
 " TODO apply proper setting for flatbuffers
 au BufRead *.fbs setl syntax=cpp
-au BufRead *.fbs setl foldmethod=syntax
 
 " sh
 au FileType sh setl foldmethod=indent
-
-" bazel
-au FileType bzl setl foldmethod=syntax
 
 try
 source ~/.vim_runtime/my_configs_local.vim
