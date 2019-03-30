@@ -22,6 +22,9 @@ au BufRead *.fbs setl syntax=cpp
 " sh
 au FileType sh setl foldmethod=indent
 
+" Makefile
+au FileType make setl foldmethod=indent
+
 try
 source ~/.vim_runtime/my_configs_local.vim
 catch
