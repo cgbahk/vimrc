@@ -9,6 +9,7 @@ set foldlevelstart=99
 " set default foldmethod
 set foldmethod=syntax
 
+let g:bufExplorerSortBy='mru'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
