@@ -9,6 +9,10 @@ set foldlevelstart=99
 " set default foldmethod
 set foldmethod=syntax
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Filetype specific configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python
 au FileType python setl foldmethod=indent
 
