@@ -28,6 +28,7 @@ au FileType make setl foldmethod=indent
 " Protobuf
 " TODO vim can parse proto. find better solution, e.g. change syntax itself
 au FileType proto setl syntax=cpp
+au BufRead *.pbtxt setl syntax=cpp
 
 try
 source ~/.vim_runtime/my_configs_local.vim
