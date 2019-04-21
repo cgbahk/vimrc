@@ -35,6 +35,36 @@ au FileType make setl foldmethod=indent
 au FileType proto setl syntax=cpp
 au BufRead *.pbtxt setl syntax=cpp
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Enhance fold view
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! FoldText()
+  " Description: Folding configuration
+
+  " TODO ALE indication column is not counted
+  let winwidth = winwidth(0)
+        \ - &fdc
+        \ - &number*&numberwidth
+        \ - (&l:signcolumn is# 'yes' ? 2 : 0)
+
+  let foldlinecount = foldclosedend(v:foldstart) - foldclosed(v:foldstart) + 1
+  let foldinfo = "   ( " . string(foldlinecount) . " lines )   "
+
+  if &foldmethod == "indent"
+    let foldsummary = getline(v:foldstart) . "..."
+  else
+    " TODO remove starting whitespaces
+    let foldsummary = getline(v:foldstart) . "..." . getline(v:foldend)
+  endif
+  let cuttedsummary = strpart(foldsummary, 0 , winwidth - len(foldinfo))
+
+  let fillcharcount = winwidth - len(cuttedsummary) - len(foldinfo)
+
+  return cuttedsummary . repeat(" ",fillcharcount) . foldinfo
+endfunction
+set foldtext=FoldText()
+
 try
 source ~/.vim_runtime/my_configs_local.vim
 catch
