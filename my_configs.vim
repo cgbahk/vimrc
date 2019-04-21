@@ -1,3 +1,6 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
 
 " let ale using compile_commands.json
@@ -10,6 +13,7 @@ set foldlevelstart=99
 set foldmethod=syntax
 
 let g:bufExplorerSortBy='mru'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
@@ -65,6 +69,10 @@ function! FoldText()
 endfunction
 set foldtext=FoldText()
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Call local configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
 source ~/.vim_runtime/my_configs_local.vim
 catch
