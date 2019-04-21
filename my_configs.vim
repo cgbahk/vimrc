@@ -59,7 +59,7 @@ function! FoldText()
     let foldsummary = getline(v:foldstart) . "..."
   else
     " TODO remove starting whitespaces
-    let foldsummary = getline(v:foldstart) . "..." . getline(v:foldend)
+    let foldsummary = getline(v:foldstart) . "..." . trim(getline(v:foldend))
   endif
   let cuttedsummary = strpart(foldsummary, 0 , winwidth - len(foldinfo))
 
