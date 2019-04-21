@@ -7,7 +7,9 @@ set t_Co=256
 let g:ale_c_parse_compile_commands = 1
 
 " No fold view on opening buffer
-set foldlevelstart=99
+au BufReadPre * :se foldlevel=99
+" Keep fold view
+set foldlevelstart=-1
 
 " set default foldmethod
 set foldmethod=syntax
