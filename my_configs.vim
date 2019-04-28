@@ -58,11 +58,14 @@ function! FoldText()
   let foldlinecount = foldclosedend(v:foldstart) - foldclosed(v:foldstart) + 1
   let foldinfo = "   ( " . string(foldlinecount) . " lines )   "
 
+  let tabreplace = repeat(" ", &tabstop)
+  let foldstartline = substitute(getline(v:foldstart), '[\t]', tabreplace, 'g')
+
   if &foldmethod == "indent"
-    let foldsummary = getline(v:foldstart) . "..."
+    let foldsummary = foldstartline . "..."
   else
     " TODO remove starting whitespaces
-    let foldsummary = getline(v:foldstart) . "..." . trim(getline(v:foldend))
+    let foldsummary = foldstartline . "..." . trim(getline(v:foldend))
   endif
   let cuttedsummary = strpart(foldsummary, 0 , winwidth - len(foldinfo))
 
