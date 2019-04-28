@@ -16,6 +16,7 @@ set foldmethod=syntax
 
 let g:bufExplorerSortBy='mru'
 
+nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:se hls<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
