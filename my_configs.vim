@@ -64,8 +64,8 @@ function! FoldText()
   if &foldmethod == "indent"
     let foldsummary = foldstartline . "..."
   else
-    " TODO remove starting whitespaces
-    let foldsummary = foldstartline . "..." . trim(getline(v:foldend))
+    let foldendline = substitute(getline(v:foldend), '^\s*\(.\{-}\)\s*$', '\1', '')
+    let foldsummary = foldstartline . "..." . foldendline
   endif
   let cuttedsummary = strpart(foldsummary, 0 , winwidth - len(foldinfo))
 
