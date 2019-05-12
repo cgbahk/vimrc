@@ -42,6 +42,8 @@ au FileType make setl foldmethod=indent
 au FileType proto setl syntax=cpp
 au BufRead *.pbtxt setl syntax=cpp
 
+" *.bzl
+au BufRead *.bzl setl foldmethod=indent
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
