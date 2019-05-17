@@ -36,6 +36,7 @@ au FileType sh setl foldmethod=indent
 
 " Makefile
 au FileType make setl foldmethod=indent
+au FileType make setl shiftwidth=4
 
 " Protobuf
 " TODO vim can parse proto. find better solution, e.g. change syntax itself
