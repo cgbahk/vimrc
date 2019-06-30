@@ -45,6 +45,9 @@ au FocusGained,BufEnter * checktime
 " like <leader>w saves the current file
 let mapleader = ","
 
+" Alias for map leader key, mainly for mobile environment
+nmap \ ,
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
