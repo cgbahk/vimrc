@@ -18,6 +18,7 @@ let g:bufExplorerSortBy='mru'
 
 nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:se hls<CR>
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,6 +46,10 @@ au BufRead *.pbtxt setl syntax=cpp
 
 " *.bzl
 au BufRead *.bzl setl foldmethod=indent
+
+" yaml
+au FileType yaml setl foldmethod=indent
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
