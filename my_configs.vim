@@ -54,6 +54,10 @@ au FileType yaml setl foldmethod=indent
 au FileType go setl tabstop=2
 au FileType go let &l:shiftwidth=&l:tabstop
 
+" groovy
+au FileType groovy setl foldmethod=marker
+au FileType groovy setl foldmarker={,}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
