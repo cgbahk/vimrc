@@ -50,6 +50,10 @@ au BufRead *.bzl setl foldmethod=indent
 " yaml
 au FileType yaml setl foldmethod=indent
 
+" jinja
+au BufRead *.jinja setl syntax=yaml
+au BufRead *.jinja setl foldmethod=indent
+
 " go
 au FileType go setl tabstop=2
 au FileType go let &l:shiftwidth=&l:tabstop
