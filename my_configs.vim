@@ -39,10 +39,15 @@ au FileType sh setl foldmethod=indent
 au FileType make setl foldmethod=indent
 au FileType make setl shiftwidth=4
 
-" Protobuf
-" TODO vim can parse proto. find better solution, e.g. change syntax itself
-au FileType proto setl syntax=cpp
-au BufRead *.pbtxt setl syntax=cpp
+" Protobuf schema
+au FileType proto setl foldmethod=marker
+au FileType proto setl foldmarker={,}
+
+" Protobuf text
+au BufRead *.pbtxt setl syntax=java
+au BufRead *.pbtxt setl foldmethod=marker
+au BufRead *.pbtxt setl foldmarker={,}
+
 
 " *.bzl
 au BufRead *.bzl setl foldmethod=indent
