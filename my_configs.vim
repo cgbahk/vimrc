@@ -33,7 +33,8 @@ au FileType cmake setl foldmethod=indent
 au BufRead *.fbs setl syntax=cpp
 
 " sh
-au FileType sh setl foldmethod=indent
+au FileType sh setl foldmethod=marker
+au FileType sh setl foldmarker={,}
 
 " Makefile
 au FileType make setl foldmethod=indent
