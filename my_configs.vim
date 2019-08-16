@@ -18,6 +18,8 @@ let g:bufExplorerSortBy='mru'
 
 nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:se hls<CR>
 
+let g:ale_python_pylint_executable='pylint3'
+let g:ale_python_pylint_options='--disable=missing-docstring'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
