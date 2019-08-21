@@ -70,6 +70,11 @@ au FileType go let &l:shiftwidth=&l:tabstop
 au FileType groovy setl foldmethod=marker
 au FileType groovy setl foldmarker={,}
 
+" Jenkinsfile
+au BufRead Jenkinsfile setl syntax=groovy
+au BufRead Jenkinsfile setl foldmethod=marker
+au BufRead Jenkinsfile setl foldmarker={,}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
