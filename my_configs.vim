@@ -56,7 +56,6 @@ au BufRead *.pbtxt setl syntax=java
 au BufRead *.pbtxt setl foldmethod=marker
 au BufRead *.pbtxt setl foldmarker={,}
 
-
 " *.bzl
 au BufRead *.bzl setl foldmethod=indent
 
@@ -79,6 +78,9 @@ au FileType groovy setl foldmarker={,}
 au BufRead Jenkinsfile setl syntax=groovy
 au BufRead Jenkinsfile setl foldmethod=marker
 au BufRead Jenkinsfile setl foldmarker={,}
+
+" xml
+au FileType xml setl foldmethod=indent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
