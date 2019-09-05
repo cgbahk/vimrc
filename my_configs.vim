@@ -21,6 +21,11 @@ nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:s
 let g:ale_python_pylint_executable='pylint3'
 let g:ale_python_pylint_options='--disable=missing-docstring'
 
+" indentation on wrap
+set breakindent
+set breakindentopt=shift:0,min:20
+set showbreak=\|
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
