@@ -82,6 +82,11 @@ au BufRead Jenkinsfile setl foldmarker={,}
 " xml
 au FileType xml setl foldmethod=indent
 
+" swift
+au BufRead *.swift setl syntax=javascript
+au BufRead *.swift setl foldmethod=marker
+au BufRead *.swift setl foldmarker={,}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
