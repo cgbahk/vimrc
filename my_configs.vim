@@ -19,7 +19,7 @@ let g:bufExplorerSortBy='mru'
 nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:se hls<CR>
 
 let g:ale_python_pylint_executable='pylint3'
-let g:ale_python_pylint_options='--disable=missing-docstring'
+let g:ale_python_pylint_options='--disable=missing-docstring,import-error'
 
 " indentation on wrap
 set breakindent
