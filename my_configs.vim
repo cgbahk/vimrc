@@ -58,6 +58,8 @@ au BufRead *.pbtxt setl foldmarker={,}
 
 " *.bzl
 au BufRead *.bzl setl foldmethod=indent
+au BufRead *.BUILD setl syntax=bzl
+au BufRead BUILD.* setl syntax=bzl
 
 " yaml
 au FileType yaml setl foldmethod=indent
