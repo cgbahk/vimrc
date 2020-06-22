@@ -46,7 +46,6 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
 
-let g:ctrlp_map = '<C-f>'
 map <leader>j :CtrlP<cr>
 map <C-b> :CtrlPBuffer<cr>
 

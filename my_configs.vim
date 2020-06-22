@@ -129,7 +129,7 @@ set foldtext=FoldText()
 " TODO Does it works without error when file not exists?
 set runtimepath+=~/.fzf
 
-map <C-e> :FZF<cr>
+map <C-f> :FZF<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
