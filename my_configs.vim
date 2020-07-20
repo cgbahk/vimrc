@@ -26,6 +26,10 @@ set breakindent
 set breakindentopt=shift:0,min:20
 set showbreak=\|
 
+" This is for 'NerdTree copy path to clipboard' working as expected
+set clipboard=unnamedplus
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
