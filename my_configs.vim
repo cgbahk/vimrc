@@ -35,6 +35,7 @@ set clipboard=unnamedplus
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python
 au FileType python setl foldmethod=indent
+au FileType python setl foldignore=""
 
 " cmake
 au FileType cmake setl foldmethod=indent
