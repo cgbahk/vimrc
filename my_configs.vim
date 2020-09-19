@@ -96,6 +96,12 @@ au BufRead *.swift setl syntax=javascript
 au BufRead *.swift setl foldmethod=marker
 au BufRead *.swift setl foldmarker={,}
 
+" git ISSUE_EDITMSG (for `hub` executable)
+au BufRead ISSUE_EDITMSG setl syntax=markdown
+au BufRead ISSUE_EDITMSG setl filetype=markdown
+au BufRead ISSUE_EDITMSG setl foldmethod=syntax
+au BufRead ISSUE_EDITMSG setl textwidth=500
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
