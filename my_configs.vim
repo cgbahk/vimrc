@@ -21,6 +21,8 @@ nnoremap <silent> * :let @/ = '\<' . escape(expand('<cword>'), '\') . '\>'<CR>:s
 let g:ale_python_pylint_executable='pylint3'
 let g:ale_python_pylint_options='--disable=missing-docstring,import-error'
 
+let g:ale_python_mypy_options=' --check-untyped-defs'
+
 " indentation on wrap
 set breakindent
 set breakindentopt=shift:0,min:20
