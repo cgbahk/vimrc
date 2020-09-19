@@ -29,6 +29,7 @@ set breakindentopt=shift:0,min:20
 set showbreak=\|
 
 " This is for 'NerdTree copy path to clipboard' working as expected
+" TODO This line makes error on Mac
 set clipboard=unnamedplus
 
 
@@ -139,7 +140,7 @@ set foldtext=FoldText()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fzf plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TODO Does it works without error when file not exists?
+" Overwrite this in local configure to append system specific fzf rtp
 set runtimepath+=~/.fzf
 
 map <C-f> :FZF<cr>
