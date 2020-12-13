@@ -7,8 +7,6 @@ au FileType python syn keyword pythonDecorator True None False self
 au BufNewFile,BufRead *.jinja set syntax=htmljinja
 au BufNewFile,BufRead *.mako set ft=mako
 
-au FileType python map <buffer> F :set foldmethod=indent<cr>
-
 au FileType python inoremap <buffer> $r return 
 au FileType python inoremap <buffer> $i import 
 au FileType python inoremap <buffer> $p print 
@@ -36,11 +34,6 @@ function! JavaScriptFold()
     setl foldmethod=syntax
     setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
-
-    function! FoldText()
-        return substitute(getline(v:foldstart), '{.*', '{...}', '')
-    endfunction
-    setl foldtext=FoldText()
 endfunction
 
 
@@ -77,4 +70,4 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 " => Markdown
 """"""""""""""""""""""""""""""
-let vim_markdown_folding_disabled = 1
+let vim_markdown_folding_style_pythonic = 1

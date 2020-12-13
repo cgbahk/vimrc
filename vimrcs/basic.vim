@@ -45,6 +45,9 @@ au FocusGained,BufEnter * checktime
 " like <leader>w saves the current file
 let mapleader = ","
 
+" Alias for map leader key, mainly for mobile environment
+nmap \ ,
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
@@ -124,8 +127,8 @@ if has("gui_macvim")
 endif
 
 
-" Add a bit extra margin to the left
-set foldcolumn=1
+" No foldcolumn as it looks more clean and foldcolumn not really informative
+set foldcolumn=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -179,8 +182,9 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
+" 1 indent == 2 spaces
+set shiftwidth=2
+" 1 real tab == 4 spaces
 set tabstop=4
 
 " Linebreak on 500 characters

@@ -288,7 +288,7 @@ elseif &background=='dark'
   hi Title		guifg=#f0c0f0	guibg=NONE	gui=NONE
   hi WarningMsg		guifg=#f08060	guibg=NONE	gui=NONE
   hi WildMenu		guifg=#000000	guibg=#d0d090	gui=NONE
-  hi Folded		guifg=#aaaaaa	guibg=#333333	gui=NONE
+  hi Folded		guifg=#202020	guibg=NONE	gui=NONE
   hi FoldColumn		guifg=#202020	guibg=NONE	gui=NONE
   hi DiffAdd		guifg=NONE	guibg=#000080	gui=NONE
   hi DiffChange		guifg=NONE	guibg=#800080	gui=NONE
@@ -524,7 +524,7 @@ elseif &background=='dark'
     hi Title		ctermfg=219	ctermbg=NONE	cterm=NONE
     hi WarningMsg	ctermfg=209	ctermbg=NONE	cterm=NONE
     hi WildMenu		ctermfg=16	ctermbg=186	cterm=NONE
-    hi Folded		ctermfg=NONE	ctermbg=DarkGrey cterm=NONE
+    hi Folded		ctermfg=DarkGrey ctermbg=NONE cterm=NONE
     hi FoldColumn	ctermfg=DarkGrey ctermbg=NONE cterm=NONE
     hi DiffAdd		ctermfg=NONE	ctermbg=18	cterm=NONE
     hi DiffChange	ctermfg=NONE	ctermbg=90	cterm=NONE
