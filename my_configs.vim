@@ -156,8 +156,13 @@ endtry
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ETC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set highlight group sign column (no color)
+" Set highlight group color scheme
 highlight SignColumn NONE
+highlight DiffAdd ctermbg=22
+highlight DiffChange ctermbg=18
+highlight DiffText NONE
+highlight DiffText ctermbg=20
+highlight DiffDelete NONE 
 
 " No ignore exception on folding
 set foldignore=""
