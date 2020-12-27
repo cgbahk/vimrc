@@ -38,7 +38,6 @@ set clipboard=unnamedplus
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python
 au FileType python setl foldmethod=indent
-au FileType python setl foldignore=""
 
 " cmake
 au FileType cmake setl foldmethod=indent
@@ -154,9 +153,11 @@ source ~/.vim_runtime/my_configs_local.vim
 catch
 endtry
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ETC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set highlight group sign column (no color)
 highlight SignColumn NONE
+
+" No ignore exception on folding
+set foldignore=""
