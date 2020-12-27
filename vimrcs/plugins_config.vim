@@ -167,7 +167,4 @@ let g:ale_lint_on_enter = 0
 let g:gitgutter_enabled=1
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-" Set highlight group sign column (no color)
-highlight SignColumn NONE
-
 let g:gitgutter_highlight_lines=1

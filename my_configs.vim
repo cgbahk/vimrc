@@ -153,3 +153,10 @@ try
 source ~/.vim_runtime/my_configs_local.vim
 catch
 endtry
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ETC
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set highlight group sign column (no color)
+highlight SignColumn NONE
