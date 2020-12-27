@@ -157,12 +157,11 @@ endtry
 " => ETC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set highlight group color scheme
-highlight SignColumn NONE
-highlight DiffAdd ctermbg=22
-highlight DiffChange ctermbg=18
-highlight DiffText NONE
-highlight DiffText ctermbg=20
-highlight DiffDelete NONE 
-
+highlight SignColumn ctermfg=none ctermbg=none
+highlight DiffAdd    ctermfg=none ctermbg=22
+highlight DiffChange ctermfg=none ctermbg=18
+highlight DiffText   ctermfg=none ctermbg=20
+highlight DiffDelete ctermfg=none ctermbg=none
+ 
 " No ignore exception on folding
 set foldignore=""
