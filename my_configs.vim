@@ -65,7 +65,7 @@ au BufRead *.pbtxt setl foldmarker={,}
 
 " *.bzl
 au BufRead *.bzl setl foldmethod=indent
-au BufRead *.BUILD setl syntax=bzl
+"au BufRead *.BUILD setl syntax=bzl "Conflict with meson.build
 au BufRead BUILD.* setl syntax=bzl
 
 " yaml
@@ -101,6 +101,12 @@ au BufRead ISSUE_EDITMSG setl syntax=markdown
 au BufRead ISSUE_EDITMSG setl filetype=markdown
 au BufRead ISSUE_EDITMSG setl foldmethod=syntax
 au BufRead ISSUE_EDITMSG setl textwidth=500
+
+" kotlin
+au FileType kotlin setl syntax=java
+
+" lua
+au FileType lua setl foldmethod=indent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -165,3 +171,5 @@ highlight DiffDelete ctermfg=none ctermbg=none
  
 " No ignore exception on folding
 set foldignore=""
+
+" FIXME Migrate vimcommit to show diff / Migrate vimtobase
