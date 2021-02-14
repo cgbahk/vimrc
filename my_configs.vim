@@ -158,9 +158,9 @@ endtry
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set highlight group color scheme
 highlight SignColumn ctermfg=none ctermbg=none
-highlight DiffAdd    ctermfg=none ctermbg=22
-highlight DiffChange ctermfg=none ctermbg=18
-highlight DiffText   ctermfg=none ctermbg=20
+highlight DiffAdd    ctermfg=none ctermbg=16
+highlight DiffChange ctermfg=none ctermbg=16
+highlight DiffText   ctermfg=none ctermbg=52
 highlight DiffDelete ctermfg=none ctermbg=none
  
 " No ignore exception on folding
