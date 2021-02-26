@@ -29,8 +29,11 @@ set breakindentopt=shift:0,min:20
 set showbreak=\|
 
 " This is for 'NerdTree copy path to clipboard' working as expected
-" TODO This line makes error on Mac
-set clipboard=unnamedplus
+if has("mac") || has("macunix")
+  set clipboard=unnamed
+elseif has("linux")
+  set clipboard=unnamedplus
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
