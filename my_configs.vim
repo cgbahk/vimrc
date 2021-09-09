@@ -105,6 +105,10 @@ au BufRead ISSUE_EDITMSG setl filetype=markdown
 au BufRead ISSUE_EDITMSG setl foldmethod=syntax
 au BufRead ISSUE_EDITMSG setl textwidth=500
 
+" Graphviz dot
+au FileType dot setl foldmethod=marker
+au FileType dot setl foldmarker={,}
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Enhance fold view
