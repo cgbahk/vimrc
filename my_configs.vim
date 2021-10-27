@@ -35,6 +35,9 @@ elseif has("linux")
   set clipboard=unnamedplus
 endif
 
+" Add '-' as keyword, so that it is understood as an element of word
+set iskeyword+=-
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
