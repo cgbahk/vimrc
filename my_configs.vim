@@ -23,6 +23,8 @@ let g:ale_python_pylint_options='--disable=missing-docstring,import-error'
 
 let g:ale_python_mypy_options=' --check-untyped-defs'
 
+let g:ale_python_flake8_options = ' --max-line-length 120'
+
 " indentation on wrap
 set breakindent
 set breakindentopt=shift:0,min:20
