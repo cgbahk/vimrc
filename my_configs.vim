@@ -23,7 +23,8 @@ let g:ale_python_pylint_options='--disable=missing-docstring,import-error'
 
 let g:ale_python_mypy_options=' --check-untyped-defs'
 
-let g:ale_python_flake8_options = ' --max-line-length 120'
+" E402 - Module level import not at top of file
+let g:ale_python_flake8_options = ' --max-line-length 120 --ignore=E402'
 
 " indentation on wrap
 set breakindent
