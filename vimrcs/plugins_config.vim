@@ -191,8 +191,10 @@ xnoremap <leader>v :'<'>GBrowse!<CR>
 " => jedi-vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:jedi#auto_vim_configuration = 0
-let g:jedi#goto_assignments_command = "<leader>a"
+let g:jedi#goto_command = "<leader>D"
+let g:jedi#goto_assignments_command = "<leader>A"
 let g:jedi#usages_command = "<leader>u"
-let g:jedi#completions_command = "<C-Space>"
+let g:jedi#completions_command = "<C-N>"
 let g:jedi#rename_command = "<leader>r"
 let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 0  " Disable
