@@ -8,5 +8,9 @@ my_plugins/
 tags
 .DS_Store
 
+# Upstream don't include these, but for stable operation, it seems these submodules are required.
+/sources_non_forked/jedi-vim/pythonx/jedi/
+/sources_non_forked/jedi-vim/pythonx/parso/
+
 # local setting
 my_configs_local.vim
