@@ -34,6 +34,8 @@ set showbreak=\|
 " This is for 'NerdTree copy path to clipboard' working as expected
 if has("mac") || has("macunix")
   set clipboard=unnamed
+elseif has("win32")
+  set clipboard=unnamed
 elseif has("linux")
   set clipboard=unnamedplus
 endif
