@@ -41,6 +41,10 @@ elseif has("linux")
   set clipboard=unnamedplus
 endif
 
+" Disable `CTRL-A` behavior. Original behavior is to increment number.
+" See `:help CTRL-A` for detail
+map <C-a> <Nop>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
