@@ -25,7 +25,9 @@ let g:ale_python_mypy_options=' --check-untyped-defs'
 
 " E402 - Module level import not at top of file
 " F401 - Module imported but unused
-let g:ale_python_flake8_options = ' --max-line-length 120 --ignore=E402 --per-file-ignores="__init__.py:F401"'
+" W503 - line break before binary operator
+" W504 - line break after binary operator
+let g:ale_python_flake8_options = ' --max-line-length 120 --ignore=E402,W503,W504 --per-file-ignores="__init__.py:F401"'
 
 " indentation on wrap
 set breakindent
