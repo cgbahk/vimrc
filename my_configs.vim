@@ -27,7 +27,8 @@ let g:ale_python_mypy_options=' --check-untyped-defs'
 " F401 - Module imported but unused
 " W503 - line break before binary operator
 " W504 - line break after binary operator
-let g:ale_python_flake8_options = ' --max-line-length 120 --ignore=E402,W503,W504 --per-file-ignores="__init__.py:F401"'
+" E501 - Tool long line (Let's check this with colorcolumn)
+let g:ale_python_flake8_options = ' --ignore=E402,W503,W504,E501 --per-file-ignores="__init__.py:F401"'
 
 " indentation on wrap
 set breakindent
@@ -53,6 +54,7 @@ map <C-a> <Nop>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " python
 au FileType python setl foldmethod=indent
+au FileType python setl colorcolumn=100
 
 " cmake
 au FileType cmake setl foldmethod=indent
@@ -181,6 +183,7 @@ highlight DiffAdd    ctermfg=none ctermbg=16
 highlight DiffChange ctermfg=none ctermbg=16
 highlight DiffText   ctermfg=none ctermbg=52
 highlight DiffDelete ctermfg=none ctermbg=none
+highlight ColorColumn ctermbg=235
  
 " No ignore exception on folding
 set foldignore=""
