@@ -48,6 +48,9 @@ endif
 " See `:help CTRL-A` for detail
 map <C-a> <Nop>
 
+" Disable mouse feature
+set mouse=
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific configuration
