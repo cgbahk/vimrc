@@ -181,12 +181,18 @@ endtry
 " => ETC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set highlight group color scheme
+
+" Used from original vim
 highlight SignColumn ctermfg=none ctermbg=none
-highlight DiffAdd    ctermfg=none ctermbg=16
-highlight DiffChange ctermfg=none ctermbg=16
 highlight DiffText   ctermfg=none ctermbg=52
 highlight DiffDelete ctermfg=none ctermbg=none
-highlight ColorColumn ctermbg=235
+
+" Used for nvim
+highlight Folded guifg=#444444
+highlight ColorColumn guibg=#242424
+highlight DiffAdd guibg=Black
+highlight DiffChange guibg=Black
+
  
 " No ignore exception on folding
 set foldignore=""
