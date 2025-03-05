@@ -196,3 +196,16 @@ highlight DiffChange guibg=Black
  
 " No ignore exception on folding
 set foldignore=""
+
+" Let's automatically change keyboard layout when exiting INSERT mode even editing in Korean
+" This required command line tool `im-select` from https://github.com/daipeihust/im-select
+if has("mac") || has("macunix")
+  let g:im_select_default = 'com.apple.keylayout.US'
+
+  function! ExitInsertModeAndSwitchIME() abort
+    call system("im-select " . g:im_select_default)
+    return "\<Esc>"
+  endfunction
+
+  inoremap <expr> <Esc> ExitInsertModeAndSwitchIME()
+endif
