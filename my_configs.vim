@@ -170,14 +170,6 @@ map <C-f> :FZF<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Call local configuration
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
-source ~/.vim_runtime/my_configs_local.vim
-catch
-endtry
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ETC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set highlight group color scheme
@@ -209,3 +201,15 @@ if has("mac") || has("macunix")
 
   inoremap <expr> <Esc> ExitInsertModeAndSwitchIME()
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Call local configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" To work with `jedi-vim` plugin, need to set `g:python3_host_prog` to the executable path of python with `jedi` and `pynvim` installed
+" To work with fzf plugin, add directory to fzf with `plugin/fzf.vim`
+
+try
+source ~/.vim_runtime/my_configs_local.vim
+catch
+endtry
