@@ -207,7 +207,7 @@ endif
 " => Call local configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " To work with `jedi-vim` plugin, need to set `g:python3_host_prog` to the executable path of python with `jedi` and `pynvim` installed
-" To work with fzf plugin, add directory to fzf with `plugin/fzf.vim`
+" To work with fzf plugin, add directory `plugin/` which has `fzf.vim` in it to `runtimepath` option
 
 try
 source ~/.vim_runtime/my_configs_local.vim
