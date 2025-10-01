@@ -192,7 +192,8 @@ set foldignore=""
 " Let's automatically change keyboard layout when exiting INSERT mode even editing in Korean
 " This required command line tool `im-select` from https://github.com/daipeihust/im-select
 if has("mac") || has("macunix")
-  let g:im_select_default = 'com.apple.keylayout.US'
+  " Should be matched with desired `im-select`. `call system(...)` hides error.
+  let g:im_select_default = 'com.apple.keylayout.ABC'
 
   function! ExitInsertModeAndSwitchIME() abort
     call system("im-select " . g:im_select_default)
