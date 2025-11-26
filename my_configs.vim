@@ -164,6 +164,7 @@ set foldtext=FoldText()
 " => fzf plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Overwrite this in local configure to append system specific fzf rtp
+" TODO Remove this
 set runtimepath+=~/.fzf
 
 map <C-f> :FZF<cr>
