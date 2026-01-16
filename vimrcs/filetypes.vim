@@ -56,6 +56,12 @@ if exists('$TMUX')
     endif
 endif
 
+"
+""""""""""""""""""""""""""""""
+" => Tex section
+""""""""""""""""""""""""""""""
+au FileType tex setlocal foldmethod=indent
+
 
 """"""""""""""""""""""""""""""
 " => Twig section
