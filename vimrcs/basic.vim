@@ -183,8 +183,8 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 indent == 2 spaces
-set shiftwidth=2
+" 1 indent == 4 spaces
+set shiftwidth=4
 " 1 real tab == 4 spaces
 set tabstop=4
 
