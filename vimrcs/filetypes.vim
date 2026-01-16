@@ -67,9 +67,3 @@ au FileType tex setlocal foldmethod=indent
 " => Twig section
 """"""""""""""""""""""""""""""
 autocmd BufRead *.twig set syntax=html filetype=html
-
-
-""""""""""""""""""""""""""""""
-" => Markdown
-""""""""""""""""""""""""""""""
-let vim_markdown_folding_style_pythonic = 1
