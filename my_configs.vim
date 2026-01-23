@@ -186,6 +186,8 @@ highlight ColorColumn guibg=#242424
 highlight DiffAdd guibg=Black
 highlight DiffChange guibg=Black
 
+" Have to be after color setting, or broken
+set background=light
  
 " No ignore exception on folding
 set foldignore=""
