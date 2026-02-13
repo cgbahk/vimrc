@@ -108,8 +108,6 @@ highlight DiffDelete ctermfg=none ctermbg=none
 " Used for nvim
 highlight Folded guifg=#444444
 highlight ColorColumn guibg=#242424
-highlight DiffAdd guibg=Black
-highlight DiffChange guibg=Black
 
 " Have to be after color setting, or broken
 set background=light
