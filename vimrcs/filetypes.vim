@@ -123,4 +123,4 @@ autocmd FileType dot setl foldmarker={,}
 autocmd FileType tex setlocal foldmethod=indent
 
 " Rocq
-autocmd BufRead *.v setfiletype ocaml
+autocmd BufRead,BufNewFile *.v setfiletype ocaml
