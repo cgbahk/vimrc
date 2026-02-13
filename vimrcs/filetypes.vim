@@ -66,58 +66,58 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 " => My custom
 """"""""""""""""""""""""""""""
-au FileType python setl foldmethod=indent
-au FileType python setl colorcolumn=100
+autocmd FileType python setl foldmethod=indent
+autocmd FileType python setl colorcolumn=100
 
-au FileType cmake setl foldmethod=indent
+autocmd FileType cmake setl foldmethod=indent
 
-au BufRead *.fbs setl syntax=cpp
+autocmd BufRead *.fbs setl syntax=cpp
 
-au FileType sh setl foldmethod=marker
-au FileType sh setl foldmarker={,}
+autocmd FileType sh setl foldmethod=marker
+autocmd FileType sh setl foldmarker={,}
 
-au FileType make setl foldmethod=indent
-au FileType make setl shiftwidth=4
+autocmd FileType make setl foldmethod=indent
+autocmd FileType make setl shiftwidth=4
 
-au FileType proto setl foldmethod=marker
-au FileType proto setl foldmarker={,}
+autocmd FileType proto setl foldmethod=marker
+autocmd FileType proto setl foldmarker={,}
 
-au BufRead *.pbtxt setl syntax=java
-au BufRead *.pbtxt setl foldmethod=marker
-au BufRead *.pbtxt setl foldmarker={,}
+autocmd BufRead *.pbtxt setl syntax=java
+autocmd BufRead *.pbtxt setl foldmethod=marker
+autocmd BufRead *.pbtxt setl foldmarker={,}
 
-au BufRead *.bzl setl foldmethod=indent
-au BufRead *.BUILD setl syntax=bzl
-au BufRead BUILD.* setl syntax=bzl
+autocmd BufRead *.bzl setl foldmethod=indent
+autocmd BufRead *.BUILD setl syntax=bzl
+autocmd BufRead BUILD.* setl syntax=bzl
 
-au FileType yaml setl foldmethod=indent
+autocmd FileType yaml setl foldmethod=indent
 
-au BufRead *.jinja setl syntax=yaml
-au BufRead *.jinja setl foldmethod=indent
+autocmd BufRead *.jinja setl syntax=yaml
+autocmd BufRead *.jinja setl foldmethod=indent
 
-au FileType go setl tabstop=2
-au FileType go let &l:shiftwidth=&l:tabstop
+autocmd FileType go setl tabstop=2
+autocmd FileType go let &l:shiftwidth=&l:tabstop
 
-au FileType groovy setl foldmethod=marker
-au FileType groovy setl foldmarker={,}
+autocmd FileType groovy setl foldmethod=marker
+autocmd FileType groovy setl foldmarker={,}
 
-au BufRead Jenkinsfile setl syntax=groovy
-au BufRead Jenkinsfile setl foldmethod=marker
-au BufRead Jenkinsfile setl foldmarker={,}
+autocmd BufRead Jenkinsfile setl syntax=groovy
+autocmd BufRead Jenkinsfile setl foldmethod=marker
+autocmd BufRead Jenkinsfile setl foldmarker={,}
 
-au FileType xml setl foldmethod=indent
+autocmd FileType xml setl foldmethod=indent
 
-au BufRead *.swift setl syntax=javascript
-au BufRead *.swift setl foldmethod=marker
-au BufRead *.swift setl foldmarker={,}
+autocmd BufRead *.swift setl syntax=javascript
+autocmd BufRead *.swift setl foldmethod=marker
+autocmd BufRead *.swift setl foldmarker={,}
 
 " git ISSUE_EDITMSG (for `hub` executable)
-au BufRead ISSUE_EDITMSG setl syntax=markdown
-au BufRead ISSUE_EDITMSG setl filetype=markdown
-au BufRead ISSUE_EDITMSG setl foldmethod=syntax
-au BufRead ISSUE_EDITMSG setl textwidth=500
+autocmd BufRead ISSUE_EDITMSG setl syntax=markdown
+autocmd BufRead ISSUE_EDITMSG setl filetype=markdown
+autocmd BufRead ISSUE_EDITMSG setl foldmethod=syntax
+autocmd BufRead ISSUE_EDITMSG setl textwidth=500
 
-au FileType dot setl foldmethod=marker
-au FileType dot setl foldmarker={,}
+autocmd FileType dot setl foldmethod=marker
+autocmd FileType dot setl foldmarker={,}
 
-au FileType tex setlocal foldmethod=indent
+autocmd FileType tex setlocal foldmethod=indent
