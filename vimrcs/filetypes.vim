@@ -56,12 +56,6 @@ if exists('$TMUX')
     endif
 endif
 
-"
-""""""""""""""""""""""""""""""
-" => Tex section
-""""""""""""""""""""""""""""""
-au FileType tex setlocal foldmethod=indent
-
 
 """"""""""""""""""""""""""""""
 " => Twig section
@@ -125,3 +119,5 @@ au BufRead ISSUE_EDITMSG setl textwidth=500
 
 au FileType dot setl foldmethod=marker
 au FileType dot setl foldmarker={,}
+
+au FileType tex setlocal foldmethod=indent
