@@ -67,3 +67,61 @@ au FileType tex setlocal foldmethod=indent
 " => Twig section
 """"""""""""""""""""""""""""""
 autocmd BufRead *.twig set syntax=html filetype=html
+
+
+""""""""""""""""""""""""""""""
+" => My custom
+""""""""""""""""""""""""""""""
+au FileType python setl foldmethod=indent
+au FileType python setl colorcolumn=100
+
+au FileType cmake setl foldmethod=indent
+
+au BufRead *.fbs setl syntax=cpp
+
+au FileType sh setl foldmethod=marker
+au FileType sh setl foldmarker={,}
+
+au FileType make setl foldmethod=indent
+au FileType make setl shiftwidth=4
+
+au FileType proto setl foldmethod=marker
+au FileType proto setl foldmarker={,}
+
+au BufRead *.pbtxt setl syntax=java
+au BufRead *.pbtxt setl foldmethod=marker
+au BufRead *.pbtxt setl foldmarker={,}
+
+au BufRead *.bzl setl foldmethod=indent
+au BufRead *.BUILD setl syntax=bzl
+au BufRead BUILD.* setl syntax=bzl
+
+au FileType yaml setl foldmethod=indent
+
+au BufRead *.jinja setl syntax=yaml
+au BufRead *.jinja setl foldmethod=indent
+
+au FileType go setl tabstop=2
+au FileType go let &l:shiftwidth=&l:tabstop
+
+au FileType groovy setl foldmethod=marker
+au FileType groovy setl foldmarker={,}
+
+au BufRead Jenkinsfile setl syntax=groovy
+au BufRead Jenkinsfile setl foldmethod=marker
+au BufRead Jenkinsfile setl foldmarker={,}
+
+au FileType xml setl foldmethod=indent
+
+au BufRead *.swift setl syntax=javascript
+au BufRead *.swift setl foldmethod=marker
+au BufRead *.swift setl foldmarker={,}
+
+" git ISSUE_EDITMSG (for `hub` executable)
+au BufRead ISSUE_EDITMSG setl syntax=markdown
+au BufRead ISSUE_EDITMSG setl filetype=markdown
+au BufRead ISSUE_EDITMSG setl foldmethod=syntax
+au BufRead ISSUE_EDITMSG setl textwidth=500
+
+au FileType dot setl foldmethod=marker
+au FileType dot setl foldmarker={,}
