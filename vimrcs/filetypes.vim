@@ -124,3 +124,5 @@ autocmd FileType tex setlocal foldmethod=indent
 
 " Rocq
 autocmd BufRead,BufNewFile *.v setfiletype ocaml
+
+autocmd FileType html setlocal iskeyword+=-
