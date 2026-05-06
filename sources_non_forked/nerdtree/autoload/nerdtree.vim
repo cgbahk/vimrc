@@ -114,14 +114,14 @@ function! nerdtree#compareNodePaths(p1, p2) abort
         " integer type is the lesser.
         if type(sortKey1[i]) == type(sortKey2[i])
             if sortKey1[i] <# sortKey2[i]
-                return - 1
+                return g:NERDTreeReverseSort ? 1 : -1
             elseif sortKey1[i] ># sortKey2[i]
-                return 1
+                return g:NERDTreeReverseSort ? -1 : 1
             endif
         elseif type(sortKey1[i]) == type(0)
-            return -1
+            return g:NERDTreeReverseSort ? 1 : -1
         elseif type(sortKey2[i]) == type(0)
-            return 1
+            return g:NERDTreeReverseSort ? -1 : 1
         endif
         let i += 1
     endwhile
@@ -129,9 +129,9 @@ function! nerdtree#compareNodePaths(p1, p2) abort
     " Keys are identical upto common length.
     " The key which has smaller chunks is the lesser one.
     if len(sortKey1) < len(sortKey2)
-        return -1
+        return g:NERDTreeReverseSort ? 1 : -1
     elseif len(sortKey1) > len(sortKey2)
-        return 1
+        return g:NERDTreeReverseSort ? -1 : 1
     else
         return 0
     endif
