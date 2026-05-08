@@ -87,6 +87,7 @@ let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
+let g:NERDTreeSortOrder=['*', '^[^0-9].*\/$', '^[0-9].*\/$']
 let g:NERDTreeReverseSort=1
 
 
