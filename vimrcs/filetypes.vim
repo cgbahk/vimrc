@@ -67,7 +67,8 @@ autocmd BufRead *.twig set syntax=html filetype=html
 " => My custom
 """"""""""""""""""""""""""""""
 autocmd FileType python setl foldmethod=indent
-autocmd FileType python setl colorcolumn=100
+" To be aligned with `ruff`
+autocmd FileType python setl colorcolumn=88
 
 autocmd FileType cmake setl foldmethod=indent
 
