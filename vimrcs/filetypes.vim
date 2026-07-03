@@ -32,6 +32,8 @@ function! JavaScriptFold()
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 endfunction
 
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2
+
 
 """"""""""""""""""""""""""""""
 " => CoffeeScript section
