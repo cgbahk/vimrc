@@ -130,3 +130,18 @@ autocmd BufRead,BufNewFile *.v setfiletype ocaml
 
 autocmd FileType html setlocal iskeyword+=-
 autocmd BufRead,BufNewFile *.html setlocal foldmethod=indent
+
+" rust
+lua <<EOF
+vim.lsp.config('rust_analyzer', {
+  cmd = { 'rust-analyzer' },
+  root_dir = function(bufnr, on_dir)
+    local fname = vim.api.nvim_buf_get_name(bufnr)
+    -- Climb parents looking for Cargo.toml or rust-project.json
+    local cargo_root = vim.fs.root(fname, { 'Cargo.toml', 'rust-project.json' })
+    on_dir(cargo_root)
+  end,
+})
+EOF
+
+autocmd FileType rust lua vim.lsp.enable('rust_analyzer')
