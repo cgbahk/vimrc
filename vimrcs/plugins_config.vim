@@ -154,7 +154,7 @@ nnoremap <silent> <leader>z :Goyo<cr>
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
+\   'go': ['go', 'golint', 'errcheck', 'gobuild', 'govet']
 \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
