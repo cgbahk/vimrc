@@ -100,6 +100,13 @@ autocmd BufRead *.jinja setl foldmethod=indent
 
 autocmd FileType go setl tabstop=2
 autocmd FileType go let &l:shiftwidth=&l:tabstop
+augroup RollbackIsKeywordForGolang
+  " Keymap K (LSP hover) for golang does `iskeyword+=.`
+  " This is to revert the behavior, but you should `:edit`
+  autocmd!
+  autocmd FileType go setlocal iskeyword-=.
+  autocmd BufWrite *.go setlocal iskeyword-=.
+augroup END
 
 autocmd FileType groovy setl foldmethod=marker
 autocmd FileType groovy setl foldmarker={,}
