@@ -142,6 +142,7 @@ autocmd BufRead,BufNewFile *.html setlocal foldmethod=indent
 lua <<EOF
 vim.lsp.config('rust_analyzer', {
   cmd = { 'rust-analyzer' },
+  filetypes = { 'rust' },
   root_dir = function(bufnr, on_dir)
     local fname = vim.api.nvim_buf_get_name(bufnr)
     -- Climb parents looking for Cargo.toml or rust-project.json
