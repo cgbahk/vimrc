@@ -136,6 +136,8 @@ autocmd FileType tex setlocal foldmethod=indent
 autocmd BufRead,BufNewFile *.v setfiletype ocaml
 
 autocmd FileType html setlocal iskeyword+=-
+autocmd FileType html setlocal tabstop=2 shiftwidth=2
+autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.html setlocal foldmethod=indent
 
 " rust
