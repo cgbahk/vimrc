@@ -154,3 +154,6 @@ vim.lsp.config('rust_analyzer', {
 EOF
 
 autocmd FileType rust lua vim.lsp.enable('rust_analyzer')
+
+" gitconfig
+autocmd FileType gitconfig setlocal noexpandtab
