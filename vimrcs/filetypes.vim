@@ -161,3 +161,7 @@ autocmd FileType gitconfig setlocal noexpandtab
 " nginx
 autocmd FileType nginx setl foldmethod=marker
 autocmd FileType nginx setl foldmarker={,}
+
+" zsh
+autocmd FileType zsh setl foldmethod=marker
+autocmd FileType zsh setl foldmarker={,}
