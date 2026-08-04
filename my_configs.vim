@@ -101,12 +101,13 @@ highlight SignColumn ctermfg=none ctermbg=none
 highlight DiffText   ctermfg=none ctermbg=52
 highlight DiffDelete ctermfg=none ctermbg=none
 
-" Used for nvim
-highlight Folded guifg=#444444
-highlight ColorColumn guibg=#242424
-
 " Have to be after color setting, or broken
 set background=light
+
+" Should be after `background` setting
+" This setting is copy of Conceal
+" TODO Tried to link `Folded` to `Conceal` but was not effective
+highlight Folded guifg=NvimLightGrey4 guibg=None
  
 " No ignore exception on folding
 set foldignore=""
