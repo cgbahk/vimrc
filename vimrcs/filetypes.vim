@@ -155,6 +155,9 @@ EOF
 
 autocmd FileType rust lua vim.lsp.enable('rust_analyzer')
 
+" To be aligned with `rustfmt`
+autocmd FileType rust setl colorcolumn=100
+
 " gitconfig
 autocmd FileType gitconfig setlocal noexpandtab
 
