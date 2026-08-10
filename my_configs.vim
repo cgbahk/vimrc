@@ -108,7 +108,8 @@ set background=light
 " This setting is copy of Conceal
 " TODO Tried to link `Folded` to `Conceal` but was not effective
 highlight Folded guifg=NvimLightGrey4 guibg=None
- 
+highlight ColorColumn cterm=reverse guibg=NvimLightGrey3
+
 " No ignore exception on folding
 set foldignore=""
 
